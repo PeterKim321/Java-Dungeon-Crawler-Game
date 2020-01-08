@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightGrey;" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="hardBtn" layoutX="255.0" layoutY="280.0" mnemonicParsing="false" onAction="#loadHardLevel" style="-fx-background-color: red; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2px;" text="Hard">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <tooltip>
+            <Tooltip fx:id="hardTooltip" text="Reach the exit!" />
+         </tooltip>
+      </Button>
+      <Button fx:id="medBtn" layoutX="236.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadMedLevel" style="-fx-background-color: red; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2px;" text="Medium">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <tooltip>
+            <Tooltip fx:id="mediumTooltip" text="Reach the exit after activating all switches and collecting all treasures!" />
+         </tooltip>
+      </Button>
+      <Button fx:id="easyBtn" layoutX="255.0" layoutY="160.0" mnemonicParsing="false" onAction="#loadEasyLevel" style="-fx-background-color: red; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2px;" text="Easy">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <tooltip>
+            <Tooltip fx:id="easyTooltip" text="Reach the exit after defeating all enemies and collecting all treasures!" />
+         </tooltip>
+      </Button>
+      <Button fx:id="backToMenuBtn" layoutX="15.0" layoutY="360.0" mnemonicParsing="false" onAction="#backToMenu" text="Back to Menu" />
+      <Text layoutX="46.0" layoutY="90.0" strokeLineCap="ROUND" strokeWidth="0.0" text="Pick your choice of Poison" textAlignment="CENTER">
+         <font>
+            <Font size="44.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.7134831460674157" centerY="0.5" focusAngle="-20.56" radius="1.0">
+               <stops>
+                  <Stop color="#c90b0b" />
+                  <Stop color="#010301" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Label layoutX="90.0" layoutY="109.0" text="(Mouse over the buttons to discover the win conditions)" textAlignment="CENTER">
+         <font>
+            <Font name="Javanese Text" size="17.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5055555555555555" centerY="0.5" focusDistance="0.04651162790697683" radius="1.0">
+               <stops>
+                  <Stop color="#a42a2a" />
+                  <Stop color="#680f0f" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>
