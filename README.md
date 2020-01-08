@@ -17,4 +17,4 @@ Because this project uses JavaFX, it requires some additional setup steps in Ecl
 
 If these steps worked, the project should no longer have the exclamation mark on it and you should be able to run the program.
 
-*Projext setup is from assignment specs.
+*Project setup is from assignment specs.
